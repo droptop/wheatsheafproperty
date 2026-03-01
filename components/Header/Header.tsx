@@ -21,8 +21,8 @@ export default function Header() {
               className="object-contain"
             />
           </div>
-          <div className="text-xl md:text-2xl font-serif font-bold text-off-white tracking-tight leading-none">
-            WheatSheaf <span className="font-light block md:inline text-off-white/40">Property</span>
+          <div className="text-xl md:text-2xl font-serif text-off-white tracking-[0.1em] leading-none uppercase font-light">
+            Wheatsheaf <span className="font-normal block md:inline text-off-white/40 normal-case tracking-normal">Property</span>
           </div>
         </Link>
 

@@ -46,8 +46,8 @@ export default function Page() {
                 className="object-contain"
               />
             </div>
-            <div className="text-xl font-serif font-bold text-slate-dark">
-              WheatSheaf Property
+            <div className="text-xl font-serif text-slate-dark uppercase font-light tracking-widest">
+              Wheatsheaf <span className="normal-case font-normal text-slate-dark/40">Property</span>
             </div>
           </div>
           <p className="text-sm text-slate-dark/40">
