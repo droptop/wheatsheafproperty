@@ -15,7 +15,7 @@ export default function FinalCTA() {
                 <div className="w-10 h-10 rounded-full border border-off-white/20 flex items-center justify-center">
                   <span className="text-accent">M</span>
                 </div>
-                <p className="text-off-white/80 font-medium">info@wheatsheafproperty.com</p>
+                <p className="text-off-white/80 font-medium">info@wheatsheafproperty.co.uk</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full border border-off-white/20 flex items-center justify-center">
