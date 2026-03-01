@@ -23,10 +23,10 @@ export default function FounderSnapshot() {
           <div className="w-full md:w-1/2 relative">
             <div className="aspect-[4/5] bg-heritage-stone overflow-hidden relative shadow-lg">
               <Image
-                src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg"
-                alt="Founder of WheatSheaf Property"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fe9e3d213bbe8421cbde2cf74c69891d8?format=webp&width=800&height=1200"
+                alt="Architectural model representing WheatSheaf Property's technical rigor"
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover transition-all duration-700 hover:scale-105"
               />
             </div>
             {/* Minimal Detail */}
