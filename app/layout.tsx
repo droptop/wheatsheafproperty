@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Wheatsheaf Property",
   description: "Wheatsheaf Property — London commercial to residential conversion specialists",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
