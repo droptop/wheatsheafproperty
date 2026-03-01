@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Logo from "../Logo";
 import Link from "next/link";
 
 export default function Header() {
@@ -12,19 +12,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/5">
       <div className="container mx-auto px-6 h-24 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-4 group">
-          <div className="relative w-12 h-12">
-            <Image
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c3e0c6022b8415497b03943566cf3b5?format=webp&width=800&height=1200"
-              alt="Wheatsheaf Property Logo"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="text-xl md:text-2xl font-serif text-off-white tracking-[0.1em] leading-none uppercase font-light">
-            Wheatsheaf <span className="font-normal block md:inline text-off-white/40 normal-case tracking-normal">Property</span>
-          </div>
-        </Link>
+        <Logo className="scale-75 origin-left" />
 
         <nav className="hidden lg:flex items-center gap-12">
           {navLinks.map((link) => (
