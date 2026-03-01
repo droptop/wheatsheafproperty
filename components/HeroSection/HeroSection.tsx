@@ -29,13 +29,13 @@ export default function HeroSection({
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-off-white mb-6 leading-tight">
             {headline}
           </h1>
-          <p className="text-lg md:text-xl text-stone-warm/90 mb-10 max-w-2xl font-sans">
+          <p className="text-lg md:text-xl text-accent/90 mb-10 max-w-2xl font-sans">
             {subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={ctaUrl}
-              className="px-8 py-4 bg-stone-warm text-slate-dark font-semibold text-lg hover:bg-heritage-stone transition-colors duration-300 text-center"
+              className="px-8 py-4 bg-accent text-brand-dark font-semibold text-lg hover:bg-accent/90 transition-colors duration-300 text-center"
             >
               {ctaText}
             </a>

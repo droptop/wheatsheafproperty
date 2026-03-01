@@ -6,6 +6,8 @@
   --color-slate-dark: #2F3E46;
   --color-off-white: #F8F9F7;
   --color-heritage-stone: #D7D2C8;
+  --color-brand-dark: #353A47;
+  --color-accent: #C5AA61;
 
   --font-sans: "Inter", var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;

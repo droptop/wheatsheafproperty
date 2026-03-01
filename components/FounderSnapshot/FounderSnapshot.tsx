@@ -17,7 +17,7 @@ export default function FounderSnapshot() {
   ];
 
   return (
-    <section className="py-24 bg-stone-warm/10">
+    <section className="py-24 bg-accent/5">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-20">
           <div className="w-full md:w-1/2 relative">

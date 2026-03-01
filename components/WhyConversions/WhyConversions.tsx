@@ -15,7 +15,7 @@ export default function WhyConversions() {
   ];
 
   return (
-    <section className="py-24 bg-stone-warm/30">
+    <section className="py-24 bg-accent/5">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-20">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-dark/50 mb-4 block">The Strategic Opportunity</span>
