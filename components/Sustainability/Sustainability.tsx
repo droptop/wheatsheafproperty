@@ -1,37 +1,39 @@
 export default function Sustainability() {
-  const items = [
+  const values = [
     {
       title: "Reduced Embodied Carbon",
-      description: "Retrofitting existing structures significantly reduces the environmental impact compared to demolition and new construction.",
+      description: "Retrofit and conversion are the most sustainable ways to build. By reusing existing structures, we significantly reduce the carbon footprint compared to demolition and reconstruction.",
     },
     {
-      title: "Net Zero Alignment",
-      description: "Our projects directly support London's commitment to achieving a net-zero building stock by 2030.",
+      title: "Net Zero & Energy Upgrades",
+      description: "We bring underperforming buildings up to the highest modern standards for energy efficiency, supporting London's net-zero commitments while improving asset performance.",
     },
     {
-      title: "Modern Energy Upgrades",
-      description: "We bring underperforming buildings up to the highest modern standards for insulation, ventilation, and energy efficiency.",
+      title: "Community Sensitivity",
+      description: "Our projects respect and enhance the surrounding neighbourhood, preserving local architectural character and strengthening the urban fabric for long-term benefit.",
     },
   ];
 
   return (
     <section className="py-24 bg-slate-dark text-off-white">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-16 items-start">
+        <div className="flex flex-col lg:flex-row gap-20 items-center">
           <div className="lg:w-1/2">
-            <span className="text-stone-warm uppercase tracking-widest text-sm mb-4 block">Sustainability & Net Zero Commitment</span>
-            <h2 className="text-3xl md:text-5xl mb-8 leading-tight max-w-xl">
-              Building the Future Without Costing the Earth
+            <span className="text-stone-warm uppercase tracking-[0.2em] text-xs font-bold mb-6 block">Responsible Development</span>
+            <h2 className="text-4xl md:text-5xl mb-8 leading-tight max-w-xl">
+              Building for a Sustainable Future
             </h2>
-            <p className="text-lg text-off-white/70 max-w-xl mb-8">
-              Retrofit and conversion is the most sustainable way to meet our housing needs. By preserving the existing urban fabric, we reduce waste and energy consumption while enhancing long-term building performance.
+            <p className="text-xl text-off-white/70 max-w-xl mb-12 leading-relaxed">
+              For WheatSheaf Property, sustainability is not an addition—it is the strategy. We believe that conversion is the responsible way to deliver the housing London needs.
             </p>
           </div>
-          <div className="lg:w-1/2 w-full grid gap-8">
-            {items.map((item, index) => (
-              <div key={index} className="border-l border-stone-warm/30 pl-8 py-2">
-                <h3 className="text-xl md:text-2xl font-serif mb-3 text-stone-warm">{item.title}</h3>
-                <p className="text-off-white/60 leading-relaxed max-w-md">{item.description}</p>
+          <div className="lg:w-1/2 w-full flex flex-col gap-12">
+            {values.map((item, index) => (
+              <div key={index} className="border-l border-stone-warm/20 pl-10 py-2 group hover:border-stone-warm transition-colors duration-500">
+                <h3 className="text-2xl font-serif mb-4 text-stone-warm">{item.title}</h3>
+                <p className="text-off-white/60 leading-relaxed max-w-md font-sans group-hover:text-off-white/80 transition-colors">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>
