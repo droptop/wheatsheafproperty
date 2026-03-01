@@ -7,8 +7,8 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({
-  headline = "Unlocking London's Potential through Strategic Conversion",
-  subheadline = "Addressing the housing crisis by transforming underutilised commercial assets into high-quality residential spaces. A practical, sustainable solution for the modern investor.",
+  headline = "Addressing London's Housing Crisis through Strategic Conversion",
+  subheadline = "With new builds facing mounting delays and costs, Wheatsheaf Property unlocks underused commercial assets to deliver high-quality residential spaces faster and more sustainably.",
   ctaText = "Book a Consultation",
   ctaUrl = "#contact",
   backgroundImageUrl = "https://images.pexels.com/photos/10964647/pexels-photo-10964647.jpeg",
@@ -20,8 +20,9 @@ export default function HeroSection({
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImageUrl})` }}
       >
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-slate-dark/40 backdrop-blur-[1px]" />
+        {/* Multi-layered overlay for maximum readability */}
+        <div className="absolute inset-0 bg-brand-dark/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 to-transparent" />
       </div>
 
       <div className="container relative z-10 px-6 mx-auto">
@@ -29,13 +30,13 @@ export default function HeroSection({
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-off-white mb-6 leading-tight">
             {headline}
           </h1>
-          <p className="text-lg md:text-xl text-stone-warm/90 mb-10 max-w-2xl font-sans">
+          <p className="text-lg md:text-xl text-off-white/80 mb-10 max-w-2xl font-sans leading-relaxed">
             {subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href={ctaUrl}
-              className="px-8 py-4 bg-stone-warm text-slate-dark font-semibold text-lg hover:bg-heritage-stone transition-colors duration-300 text-center"
+              className="px-8 py-4 bg-accent text-brand-dark font-semibold text-lg hover:bg-accent/90 transition-colors duration-300 text-center"
             >
               {ctaText}
             </a>

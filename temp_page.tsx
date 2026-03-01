@@ -40,7 +40,7 @@ export default function HomePage() {
       <footer className="py-12 bg-off-white border-t border-slate-dark/5">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm text-slate-dark/40 font-medium tracking-widest uppercase">
-            &copy; {new Date().getFullYear()} WheatSheaf Property. All rights reserved.
+            &copy; {new Date().getFullYear()} Wheatsheaf Property. All rights reserved.
           </p>
         </div>
       </footer>
