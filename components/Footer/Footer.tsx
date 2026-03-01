@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Logo from "../Logo";
 
 export default function Footer() {
@@ -17,8 +18,18 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center justify-center space-y-12">
           {/* Footer Logo */}
-          <Logo className="scale-125 md:scale-150" />
-          
+          <div className="flex flex-col items-center gap-8">
+            <div className="relative w-24 h-24 md:w-32 md:h-32">
+              <Image
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Faf3944dd212f42caabfe8c6d1d484e45?format=webp&width=800&height=1200"
+                alt="Wheatsheaf Crest"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <Logo className="scale-125 md:scale-150" />
+          </div>
+
           {/* Footer Navigation */}
           <nav className="flex flex-wrap justify-center gap-x-12 gap-y-6">
             {footerLinks.map((link) => (
