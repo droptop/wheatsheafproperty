@@ -40,7 +40,7 @@ export default function Logo({
   return (
     <Link
       href="/"
-      className={`flex group ${crestPosition === "top" ? "flex-col items-center gap-2 md:gap-3" : "flex-row items-center gap-4"} ${className}`}
+      className={`flex group ${crestPosition === "top" ? "flex-col items-center gap-1 md:gap-1.5" : "flex-row items-center gap-4"} ${className}`}
     >
       {showCrest && Crest}
       <div className="flex flex-col items-center">
