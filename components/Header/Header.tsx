@@ -1,11 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../Logo";
 import Link from "next/link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMenuOpen]);
 
   const navLinks = [
     { name: "Market Context", href: "#why-conversions" },
@@ -53,16 +65,16 @@ export default function Header() {
 
         {/* Mobile Menu Overlay */}
         <div className={`
-          lg:hidden fixed inset-0 bg-brand-dark transition-transform duration-500 ease-in-out z-40
+          lg:hidden fixed inset-0 bg-brand-dark transition-transform duration-500 ease-in-out z-40 overflow-y-auto
           ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
         `}>
-          <div className="flex flex-col items-center justify-center h-full gap-8 px-6">
+          <div className="flex flex-col items-center justify-center min-h-full py-20 gap-8 px-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-xl uppercase font-bold tracking-[0.3em] text-off-white hover:text-accent transition-colors"
+                className="text-2xl uppercase font-bold tracking-[0.3em] text-off-white hover:text-accent transition-colors"
               >
                 {link.name}
               </a>
