@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0A0A0A] text-off-white/60 py-16 md:py-24 border-t border-white/5">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center justify-center space-y-12">
+        <div className="flex flex-col items-center justify-center space-y-20 md:space-y-24">
           {/* Footer Logo */}
           <div className="flex flex-col items-center">
             <Logo showCrest={true} crestPosition="top" crestSize="medium" className="scale-125 md:scale-150" />
