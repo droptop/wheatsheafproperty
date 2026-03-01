@@ -1,5 +1,6 @@
-import { fetchOneEntry, getBuilderSearchParams, Content } from "@builder.io/sdk-react-nextjs";
+import { fetchOneEntry, getBuilderSearchParams } from "@builder.io/sdk-react-nextjs";
 import { notFound } from "next/navigation";
+import RenderBuilderContent from "@/components/builder/RenderBuilderContent";
 import heroSection from "@/components/HeroSection";
 
 const BUILDER_API_KEY = process.env.NEXT_PUBLIC_BUILDER_API_KEY!;
@@ -27,7 +28,7 @@ export default async function Page({ params, searchParams }: PageProps) {
   }
 
   return (
-    <Content
+    <RenderBuilderContent
       content={content}
       model="page"
       apiKey={BUILDER_API_KEY}
