@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({
   headline = "Addressing London's Housing Crisis through Strategic Conversion",
-  subheadline = "With new builds facing mounting delays and costs, WheatSheaf Property unlocks underused commercial assets to deliver high-quality residential spaces faster and more sustainably.",
+  subheadline = "With new builds facing mounting delays and costs, Wheatsheaf Property unlocks underused commercial assets to deliver high-quality residential spaces faster and more sustainably.",
   ctaText = "Book a Consultation",
   ctaUrl = "#contact",
   backgroundImageUrl = "https://images.pexels.com/photos/10964647/pexels-photo-10964647.jpeg",

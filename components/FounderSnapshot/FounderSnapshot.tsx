@@ -24,7 +24,7 @@ export default function FounderSnapshot() {
             <div className="aspect-[4/5] bg-heritage-stone overflow-hidden relative shadow-lg">
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fe9e3d213bbe8421cbde2cf74c69891d8?format=webp&width=800&height=1200"
-                alt="Architectural model representing WheatSheaf Property's technical rigor"
+                alt="Architectural model representing Wheatsheaf Property's technical rigor"
                 fill
                 className="object-cover transition-all duration-700 scale-110 hover:scale-115"
               />
@@ -37,7 +37,7 @@ export default function FounderSnapshot() {
             <span className="text-slate-dark/40 uppercase tracking-[0.2em] text-xs font-bold mb-6 block">Our Foundation</span>
             <h2 className="text-3xl md:text-5xl mb-8 leading-tight">Rooted in Technical Rigor</h2>
             <p className="text-xl text-slate-dark/70 mb-12 leading-relaxed">
-              WheatSheaf Property was built to differentiate from purely marketing-driven developers. We bring practical building knowledge and engineering discipline to the London conversion market.
+              Wheatsheaf Property was built to differentiate from purely marketing-driven developers. We bring practical building knowledge and engineering discipline to the London conversion market.
             </p>
 
             <div className="space-y-10">

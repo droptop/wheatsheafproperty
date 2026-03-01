@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "WheatSheaf Property",
-  description: "WheatSheaf Property — London commercial to residential conversion specialists",
+  title: "Wheatsheaf Property",
+  description: "Wheatsheaf Property — London commercial to residential conversion specialists",
 };
 
 export default function RootLayout({

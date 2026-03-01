@@ -14,7 +14,7 @@ export default function Page() {
       
       <HeroSection
         headline="Strategic Commercial-to-Residential Conversions"
-        subheadline="WheatSheaf Property transforms underutilised London assets into high-quality housing. We offer a disciplined, sustainable response to the capital's housing crisis."
+        subheadline="Wheatsheaf Property transforms underutilised London assets into high-quality housing. We offer a disciplined, sustainable response to the capital's housing crisis."
         backgroundImageUrl="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F85058dad036f4219870a9555a2369cf4?format=webp&width=800&height=1200"
       />
       
@@ -42,7 +42,7 @@ export default function Page() {
             <div className="relative w-8 h-8 opacity-60">
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c3e0c6022b8415497b03943566cf3b5?format=webp&width=800&height=1200"
-                alt="WheatSheaf Property Logo"
+                alt="Wheatsheaf Property Logo"
                 fill
                 className="object-contain"
               />
@@ -52,7 +52,7 @@ export default function Page() {
             </div>
           </div>
           <p className="text-sm text-slate-dark/40">
-            © {new Date().getFullYear()} WheatSheaf Property. All rights reserved.
+            © {new Date().getFullYear()} Wheatsheaf Property. All rights reserved.
           </p>
           <div className="flex gap-8 text-sm font-medium text-slate-dark/60">
             <a href="#" className="hover:text-slate-dark">Privacy Policy</a>

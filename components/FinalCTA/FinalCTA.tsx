@@ -8,7 +8,7 @@ export default function FinalCTA() {
               Ready to Unlock Hidden Value in London?
             </h2>
             <p className="text-xl text-off-white/70 mb-12 max-w-xl leading-relaxed">
-              Contact WheatSheaf Property to schedule a consultation and discuss your investment objectives with our technical lead.
+              Contact Wheatsheaf Property to schedule a consultation and discuss your investment objectives with our technical lead.
             </p>
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4">

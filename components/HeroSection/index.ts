@@ -5,7 +5,7 @@ const heroSectionRegistration: RegisteredComponent = {
   component: HeroSection,
   name: "HeroSection",
   inputs: [
-    { name: "headline", type: "string", defaultValue: "Welcome to WheatSheaf Property" },
+    { name: "headline", type: "string", defaultValue: "Welcome to Wheatsheaf Property" },
     { name: "subheadline", type: "string", defaultValue: "Premium property services" },
     { name: "ctaText", type: "string", defaultValue: "View Properties" },
     { name: "ctaUrl", type: "url", defaultValue: "/properties" },

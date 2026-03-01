@@ -24,7 +24,7 @@ export default function Sustainability() {
               Building for a Sustainable Future
             </h2>
             <p className="text-xl text-off-white/70 max-w-xl mb-12 leading-relaxed">
-              For WheatSheaf Property, sustainability is not an addition—it is the strategy. We believe that conversion is the responsible way to deliver the housing London needs.
+              For Wheatsheaf Property, sustainability is not an addition—it is the strategy. We believe that conversion is the responsible way to deliver the housing London needs.
             </p>
           </div>
           <div className="lg:w-1/2 w-full flex flex-col gap-12">

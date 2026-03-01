@@ -16,7 +16,7 @@ export default function Header() {
           <div className="relative w-12 h-12">
             <Image
               src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c3e0c6022b8415497b03943566cf3b5?format=webp&width=800&height=1200"
-              alt="WheatSheaf Property Logo"
+              alt="Wheatsheaf Property Logo"
               fill
               className="object-contain"
             />
