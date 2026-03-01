@@ -7,19 +7,41 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({
-  headline,
-  subheadline,
-  ctaText,
-  ctaUrl,
-  backgroundImageUrl,
+  headline = "Unlocking London's Potential through Strategic Conversion",
+  subheadline = "Addressing the housing crisis by transforming underutilised commercial assets into high-quality residential spaces. A practical, sustainable solution for the modern investor.",
+  ctaText = "Book a Consultation",
+  ctaUrl = "#contact",
+  backgroundImageUrl = "https://images.pexels.com/photos/10964647/pexels-photo-10964647.jpeg",
 }: HeroSectionProps) {
   return (
-    <section
-      style={backgroundImageUrl ? { backgroundImage: `url(${backgroundImageUrl})` } : undefined}
-    >
-      {headline && <h1>{headline}</h1>}
-      {subheadline && <p>{subheadline}</p>}
-      {ctaText && ctaUrl && <a href={ctaUrl}>{ctaText}</a>}
+    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 z-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-slate-dark/40 backdrop-blur-[1px]" />
+      </div>
+
+      <div className="container relative z-10 px-6 mx-auto">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-off-white mb-6 leading-tight">
+            {headline}
+          </h1>
+          <p className="text-lg md:text-xl text-stone-warm/90 mb-10 max-w-2xl font-sans">
+            {subheadline}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href={ctaUrl}
+              className="px-8 py-4 bg-stone-warm text-slate-dark font-semibold text-lg hover:bg-heritage-stone transition-colors duration-300 text-center"
+            >
+              {ctaText}
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
