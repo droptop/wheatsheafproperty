@@ -24,9 +24,9 @@ export default function Header() {
               {link.name}
             </a>
           ))}
-          <a 
-            href="#contact" 
-            className="px-8 py-3 bg-accent text-brand-dark text-xs uppercase font-bold tracking-[0.25em] hover:bg-accent/90 transition-colors"
+          <a
+            href="#contact"
+            className="px-8 py-4 bg-accent text-brand-dark font-semibold text-lg hover:bg-accent/90 transition-colors duration-300 text-center"
           >
             Book a Consultation
           </a>
