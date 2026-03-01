@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Header() {
   const navLinks = [
     { name: "Market Context", href: "#why-conversions" },
@@ -9,10 +11,20 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-off-white/90 backdrop-blur-md border-b border-slate-dark/5">
       <div className="container mx-auto px-6 h-24 flex items-center justify-between">
-        <div className="text-xl md:text-2xl font-serif font-bold text-slate-dark tracking-tight leading-none">
-          WheatSheaf <span className="font-light block md:inline text-slate-dark/40">Property</span>
-        </div>
-        
+        <a href="/" className="flex items-center gap-4 group">
+          <div className="relative w-12 h-12">
+            <Image
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c3e0c6022b8415497b03943566cf3b5?format=webp&width=800&height=1200"
+              alt="WheatSheaf Property Logo"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <div className="text-xl md:text-2xl font-serif font-bold text-slate-dark tracking-tight leading-none">
+            WheatSheaf <span className="font-light block md:inline text-slate-dark/40">Property</span>
+          </div>
+        </a>
+
         <nav className="hidden lg:flex items-center gap-12">
           {navLinks.map((link) => (
             <a 

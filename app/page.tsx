@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Header from "@/components/Header/Header";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import WhyConversions from "@/components/WhyConversions/WhyConversions";
@@ -36,8 +37,18 @@ export default function Page() {
       
       <footer className="py-12 bg-off-white border-t border-slate-dark/5">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-xl font-serif font-bold text-slate-dark">
-            WheatSheaf Property
+          <div className="flex items-center gap-3">
+            <div className="relative w-8 h-8 opacity-60">
+              <Image
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c3e0c6022b8415497b03943566cf3b5?format=webp&width=800&height=1200"
+                alt="WheatSheaf Property Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="text-xl font-serif font-bold text-slate-dark">
+              WheatSheaf Property
+            </div>
           </div>
           <p className="text-sm text-slate-dark/40">
             © {new Date().getFullYear()} WheatSheaf Property. All rights reserved.
