@@ -35,7 +35,7 @@ export default function Services() {
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-5xl mb-6">Expertise Across the Property Lifecycle</h2>
           <p className="text-lg text-slate-dark/70">
-            A strategic, disciplined approach to identifying and unlocking value in London's urban landscape.
+            A strategic, disciplined approach to identifying and unlocking value in London&apos;s urban landscape.
           </p>
         </div>
         

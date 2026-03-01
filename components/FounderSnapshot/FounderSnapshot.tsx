@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function FounderSnapshot() {
   const points = [
     {
@@ -20,17 +22,18 @@ export default function FounderSnapshot() {
         <div className="flex flex-col md:flex-row items-center gap-16">
           {/* Image Section */}
           <div className="w-full md:w-1/2 relative">
-            <div className="aspect-[4/5] bg-heritage-stone overflow-hidden shadow-2xl">
-              <img 
-                src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg" 
+            <div className="aspect-[4/5] bg-heritage-stone overflow-hidden shadow-2xl relative">
+              <Image
+                src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg"
                 alt="Founder of WheatSheaf Property"
-                className="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply"
+                fill
+                className="object-cover grayscale opacity-90 mix-blend-multiply"
               />
             </div>
             {/* Minimal Decorative Element */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border border-slate-dark/10 -z-10"></div>
           </div>
-          
+
           {/* Content Section */}
           <div className="w-full md:w-1/2">
             <span className="text-slate-dark uppercase tracking-widest text-sm mb-4 block">Founder Credibility</span>
@@ -38,7 +41,7 @@ export default function FounderSnapshot() {
             <p className="text-lg text-slate-dark/70 mb-10 leading-relaxed max-w-xl">
               WheatSheaf Property was founded with a singular purpose: to bring technical rigor and investor-aligned strategy to the London conversion market. Our leadership combines extensive landlord experience with a background in engineering to ensure every project is grounded in reality.
             </p>
-            
+
             <div className="space-y-8 max-w-lg">
               {points.map((point, index) => (
                 <div key={index} className="flex gap-4">

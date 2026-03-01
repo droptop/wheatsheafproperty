@@ -3,7 +3,7 @@ export default function FinalCTA() {
     <section id="contact" className="py-24 bg-slate-dark text-off-white">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-5xl lg:text-6xl mb-8 leading-tight max-w-4xl mx-auto">
-          Ready to Unlock Hidden Value in London's Property Market?
+          Ready to Unlock Hidden Value in London&apos;s Property Market?
         </h2>
         <p className="text-xl text-off-white/70 mb-12 max-w-2xl mx-auto">
           Contact WheatSheaf Property to schedule a consultation and discuss your investment objectives.
