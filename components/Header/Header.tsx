@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const navLinks = [
@@ -11,7 +12,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/5">
       <div className="container mx-auto px-6 h-24 flex items-center justify-between">
-        <a href="/" className="flex items-center gap-4 group">
+        <Link href="/" className="flex items-center gap-4 group">
           <div className="relative w-12 h-12">
             <Image
               src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c3e0c6022b8415497b03943566cf3b5?format=webp&width=800&height=1200"
@@ -23,7 +24,7 @@ export default function Header() {
           <div className="text-xl md:text-2xl font-serif font-bold text-off-white tracking-tight leading-none">
             WheatSheaf <span className="font-light block md:inline text-off-white/40">Property</span>
           </div>
-        </a>
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-12">
           {navLinks.map((link) => (

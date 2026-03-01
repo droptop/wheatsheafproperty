@@ -20,8 +20,9 @@ export default function HeroSection({
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImageUrl})` }}
       >
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-slate-dark/40 backdrop-blur-[1px]" />
+        {/* Multi-layered overlay for maximum readability */}
+        <div className="absolute inset-0 bg-brand-dark/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/80 to-transparent" />
       </div>
 
       <div className="container relative z-10 px-6 mx-auto">
@@ -29,7 +30,7 @@ export default function HeroSection({
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-off-white mb-6 leading-tight">
             {headline}
           </h1>
-          <p className="text-lg md:text-xl text-accent/90 mb-10 max-w-2xl font-sans">
+          <p className="text-lg md:text-xl text-off-white/80 mb-10 max-w-2xl font-sans leading-relaxed">
             {subheadline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
