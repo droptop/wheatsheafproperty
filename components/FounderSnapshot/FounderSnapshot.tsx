@@ -26,7 +26,7 @@ export default function FounderSnapshot() {
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fe9e3d213bbe8421cbde2cf74c69891d8?format=webp&width=800&height=1200"
                 alt="Architectural model representing WheatSheaf Property's technical rigor"
                 fill
-                className="object-cover transition-all duration-700 hover:scale-105"
+                className="object-cover transition-all duration-700 scale-110 hover:scale-115"
               />
             </div>
             {/* Minimal Detail */}
