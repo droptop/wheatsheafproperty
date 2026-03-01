@@ -12,9 +12,10 @@ export default function Page() {
     <main className="min-h-screen bg-off-white font-sans text-slate-dark antialiased">
       <Header />
       
-      <HeroSection 
+      <HeroSection
         headline="Strategic Commercial-to-Residential Conversions"
         subheadline="WheatSheaf Property transforms underutilised London assets into high-quality housing. We offer a disciplined, sustainable response to the capital's housing crisis."
+        backgroundImageUrl="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F85058dad036f4219870a9555a2369cf4?format=webp&width=800&height=1200"
       />
       
       <section id="why-conversions">
