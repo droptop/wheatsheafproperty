@@ -65,16 +65,19 @@ export default function Header() {
 
         {/* Mobile Menu Overlay */}
         <div className={`
-          lg:hidden fixed inset-0 bg-brand-dark transition-transform duration-500 ease-in-out z-40 overflow-y-auto
-          ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
+          lg:hidden fixed inset-0 bg-brand-dark transition-all duration-500 ease-in-out z-40 overflow-y-auto
+          ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}
         `}>
-          <div className="flex flex-col items-center justify-center min-h-full py-20 gap-8 px-6">
+          <div className={`
+            flex flex-col items-center justify-center min-h-full py-32 gap-8 px-6 transition-all duration-500
+            ${isMenuOpen ? "scale-100 translate-y-0" : "scale-90 -translate-y-10"}
+          `}>
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="text-2xl uppercase font-bold tracking-[0.3em] text-off-white hover:text-accent transition-colors"
+                className="text-3xl uppercase font-bold tracking-[0.4em] text-off-white hover:text-accent transition-colors text-center"
               >
                 {link.name}
               </a>
@@ -82,7 +85,7 @@ export default function Header() {
             <a
               href="#contact"
               onClick={() => setIsMenuOpen(false)}
-              className="mt-4 px-10 py-5 bg-accent text-brand-dark font-bold text-xl hover:bg-accent/90 transition-colors duration-300 text-center w-full max-w-sm"
+              className="mt-4 px-10 py-5 bg-accent text-brand-dark font-bold text-xl hover:bg-accent/90 transition-colors duration-300 text-center w-full max-w-sm uppercase tracking-widest"
             >
               Book a Consultation
             </a>
