@@ -1,7 +1,5 @@
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -14,9 +12,19 @@ export async function POST(request: Request) {
       );
     }
 
-    const { data, error } = await resend.emails.send({
-      from: 'Wheatsheaf Contact Form <onboarding@resend.dev>',
-      to: ['wheatsheaf@wheatsheafproperty.co.uk'],
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: false, // port 587 uses STARTTLS, not SSL
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
+
+    await transporter.sendMail({
+      from: `"Wheatsheaf Contact Form" <${process.env.SMTP_USER}>`,
+      to: 'wheatsheaf@wheatsheafproperty.co.uk',
       subject: `New Consultation Request from ${name}`,
       replyTo: email,
       text: `
@@ -38,12 +46,7 @@ ${message}
       `,
     });
 
-    if (error) {
-      console.error('Resend error:', error);
-      return NextResponse.json({ error }, { status: 500 });
-    }
-
-    return NextResponse.json({ data });
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error('API Error:', error);
     return NextResponse.json(
@@ -52,3 +55,7 @@ ${message}
     );
   }
 }
+SMTP_HOST=mail.wheatsheafproperty.co.uk
+SMTP_PORT=587
+SMTP_USER=wheatsheaf@wheatsheafproperty.co.uk
+SMTP_PASS=MicroQuake22
