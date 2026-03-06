@@ -55,7 +55,3 @@ ${message}
     );
   }
 }
-SMTP_HOST=mail.wheatsheafproperty.co.uk
-SMTP_PORT=587
-SMTP_USER=wheatsheaf@wheatsheafproperty.co.uk
-SMTP_PASS=MicroQuake22
