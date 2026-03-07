@@ -68,12 +68,19 @@ export default function FinalCTA() {
           <div className="lg:w-1/2 bg-white/5 p-12 backdrop-blur-sm border border-white/10">
             <h3 className="text-2xl font-serif mb-8 text-accent">Book a Consultation</h3>
             {status === 'success' ? (
-              <div className="bg-green-500/20 border border-green-500/50 p-6 text-center">
-                <h4 className="text-xl font-bold mb-2">Message Sent!</h4>
-                <p>Thank you for reaching out. We will get back to you soon.</p>
+              <div className="bg-emerald-500/10 border border-emerald-500/30 p-12 text-center flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full border-2 border-emerald-500/50 flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h4 className="text-2xl font-serif mb-4 text-emerald-500">Message Sent!</h4>
+                <p className="text-off-white/80 leading-relaxed max-w-sm">
+                  Thank you for reaching out. We will get back to you soon.
+                </p>
                 <button
                   onClick={() => setStatus('idle')}
-                  className="mt-4 text-accent underline underline-offset-4"
+                  className="mt-8 text-accent underline underline-offset-8 hover:opacity-80 transition-opacity"
                 >
                   Send another message
                 </button>
