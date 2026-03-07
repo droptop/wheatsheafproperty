@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import ScrollReveal from '../ScrollReveal';
 
 export default function FinalCTA() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -37,7 +38,7 @@ export default function FinalCTA() {
     <section id="contact" className="py-24 bg-slate-dark text-off-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-20">
-          <div className="lg:w-1/2">
+          <ScrollReveal className="lg:w-1/2">
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight max-w-2xl">
               Ready to Unlock Hidden Value in London?
             </h2>
@@ -51,7 +52,7 @@ export default function FinalCTA() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-off-white/80 font-medium">wheatsheaf@wheatsheafproperty.co.uk</p>
+                <p className="text-off-white/80 font-medium">consult@wheatsheafproperty.co.uk</p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full border border-off-white/20 flex items-center justify-center">
@@ -63,17 +64,24 @@ export default function FinalCTA() {
                 <p className="text-off-white/80 font-medium">London, United Kingdom</p>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
-          <div className="lg:w-1/2 bg-white/5 p-12 backdrop-blur-sm border border-white/10">
+          <ScrollReveal delay={0.2} className="lg:w-1/2 bg-white/5 p-12 backdrop-blur-sm border border-white/10">
             <h3 className="text-2xl font-serif mb-8 text-accent">Book a Consultation</h3>
             {status === 'success' ? (
-              <div className="bg-green-500/20 border border-green-500/50 p-6 text-center">
-                <h4 className="text-xl font-bold mb-2">Message Sent!</h4>
-                <p>Thank you for reaching out. We will get back to you soon.</p>
+              <div className="bg-emerald-500/10 border border-emerald-500/30 p-12 text-center flex flex-col items-center">
+                <div className="w-16 h-16 rounded-full border-2 border-emerald-500/50 flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h4 className="text-2xl font-serif mb-4 text-emerald-500">Message Sent!</h4>
+                <p className="text-off-white/80 leading-relaxed max-w-sm">
+                  Thank you for reaching out. We will get back to you soon.
+                </p>
                 <button
                   onClick={() => setStatus('idle')}
-                  className="mt-4 text-accent underline underline-offset-4"
+                  className="mt-8 text-accent underline underline-offset-8 hover:opacity-80 transition-opacity"
                 >
                   Send another message
                 </button>
@@ -127,7 +135,7 @@ export default function FinalCTA() {
                 </button>
               </form>
             )}
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

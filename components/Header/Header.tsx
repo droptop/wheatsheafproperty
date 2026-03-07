@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-[100] bg-brand-dark/95 backdrop-blur-md border-b border-white/5">
+      <header className="fixed top-0 left-0 right-0 z-[100] bg-[#0A0A0A]/95 backdrop-blur-md border-b border-white/5">
         <div className="container mx-auto px-6 h-32 md:h-44 flex items-center justify-between transition-all duration-300 relative">
           <Logo
             showCrest={true}
@@ -68,7 +68,7 @@ export default function Header() {
 
       {/* Full Page Mobile Menu Overlay - Outside the header container to ensure it expands correctly */}
       <div className={`
-        lg:hidden fixed inset-0 bg-brand-dark transition-all duration-500 ease-in-out z-[90] overflow-y-auto
+        lg:hidden fixed inset-0 bg-[#0A0A0A] transition-all duration-500 ease-in-out z-[90] overflow-y-auto
         ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}
       `}>
         <div className={`
