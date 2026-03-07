@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import ScrollReveal from '../ScrollReveal';
 
 export default function FinalCTA() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -37,7 +38,7 @@ export default function FinalCTA() {
     <section id="contact" className="py-24 bg-slate-dark text-off-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-20">
-          <div className="lg:w-1/2">
+          <ScrollReveal className="lg:w-1/2">
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-8 leading-tight max-w-2xl">
               Ready to Unlock Hidden Value in London?
             </h2>
@@ -63,9 +64,9 @@ export default function FinalCTA() {
                 <p className="text-off-white/80 font-medium">London, United Kingdom</p>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
 
-          <div className="lg:w-1/2 bg-white/5 p-12 backdrop-blur-sm border border-white/10">
+          <ScrollReveal delay={0.2} className="lg:w-1/2 bg-white/5 p-12 backdrop-blur-sm border border-white/10">
             <h3 className="text-2xl font-serif mb-8 text-accent">Book a Consultation</h3>
             {status === 'success' ? (
               <div className="bg-emerald-500/10 border border-emerald-500/30 p-12 text-center flex flex-col items-center">
@@ -134,7 +135,7 @@ export default function FinalCTA() {
                 </button>
               </form>
             )}
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

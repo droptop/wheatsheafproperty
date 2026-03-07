@@ -1,3 +1,5 @@
+import ScrollReveal from '../ScrollReveal';
+
 interface HeroSectionProps {
   headline?: string;
   subheadline?: string;
@@ -26,7 +28,7 @@ export default function HeroSection({
       </div>
 
       <div className="container relative z-10 px-6 mx-auto">
-        <div className="max-w-3xl">
+        <ScrollReveal className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-off-white mb-6 leading-tight">
             {headline}
           </h1>
@@ -41,7 +43,7 @@ export default function HeroSection({
               {ctaText}
             </a>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
